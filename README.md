@@ -76,7 +76,7 @@ Pastikan Anda memiliki:
 Jalankan script untuk membuat akun admin default:
 
 ```bash
-node setup-admin.js
+node seedAdminUsers.js
 ```
 
 Script ini akan membuat 2 akun:
