@@ -239,7 +239,6 @@ const PostsPage: React.FC = () => {
                 
                 <div className="text-sm text-gray-500 mb-3">
                   <p>Lokasi: {post.location || '-'}</p>
-                  <p>Jumlah: {post.availableQuantity || 0}</p>
                   <p>Dibuat: {new Date(post.createdAt).toLocaleDateString('id-ID')}</p>
                 </div>
                 
