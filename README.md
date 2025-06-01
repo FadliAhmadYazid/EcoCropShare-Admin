@@ -1,6 +1,7 @@
 # EcoCropShare Admin Panel
 
 Panel administrasi untuk platform EcoCropShare yang dibangun dengan Next.js, TypeScript, dan MongoDB.
+## Link Deploy : https://eco-crop-share-admin.vercel.app/
 
 ## 🚀 Fitur
 
