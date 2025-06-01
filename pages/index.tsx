@@ -47,7 +47,7 @@ interface DashboardStats {
 }
 
 interface DashboardProps {
-  userRole: string;
+  userRole: string | null;
 }
 
 const Dashboard: React.FC<DashboardProps> = ({ userRole }) => {
@@ -276,9 +276,12 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     };
   }
 
+  // FIX: Pastikan userRole tidak undefined
+  const userRole = session.user?.role || null;
+
   return {
     props: {
-      userRole: session.user.role,
+      userRole,
     },
   };
 };
